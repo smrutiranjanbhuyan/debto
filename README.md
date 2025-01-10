@@ -1,4 +1,4 @@
-echo "# Debto App
+# Debto App
 
 Debto is a simple financial management app that helps minimize cash flow using an optimized algorithm.
 

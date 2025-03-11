@@ -32,11 +32,9 @@ const MinimizeTransaction = ({ data }) => {
     `;
 
     const { result } = await SMS.sendSMSAsync(senderPhone, message); 
-    if (result === "sent") {
+    if (result == "sent") {
       Alert.alert("Message Sent", "Your message was successfully sent.");
-    } else {
-      Alert.alert("Error", "There was an issue sending the message.");
-    }
+    } 
   };
 
   // Send WhatsApp message function

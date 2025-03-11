@@ -102,7 +102,7 @@ const Transaction = () => {
   const handleSubmit = async () => {
     const isValid = await validateTransactionData();
     if (isValid) {
-      console.log("Transaction Data:", transactionData);
+      // console.log("Transaction Data:", transactionData);
       const result = await CashFlowMinimizer.minCashFlow(transactionData);
  
       const { totalSettled, transactions } = result;
@@ -113,7 +113,7 @@ const Transaction = () => {
       navigation.navigate('mintrans');  
   
     } else {
-      console.log("Form validation failed");
+      // console.log("Form validation failed");
     }
   };
   

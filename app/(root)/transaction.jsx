@@ -58,7 +58,7 @@ const Transaction = () => {
   // Handle selecting a contact
   const handleSelectContact = (index, field, contact) => {
     const updatedData = [...transactionData];
-    const contactId = contact ? contact.id : ""; // Ensure contact.id is being used
+    const contactId = contact ? contact.id : ""; 
     updatedData[index][field === "sender" ? 0 : 1] = contactId;
     setTransactionData(updatedData);
   };
